@@ -1,10 +1,3 @@
-
-
-/*
- * Estilos de tu proyecto
- #2c3e50 #18bc9c  #212529
-
- */
 * {
  	box-sizing: border-box;
  }
@@ -14,6 +7,7 @@ body {
 	padding: 0;
  }
 
+/* Barra de navegación */
 nav {
 	display: table;
 	margin: auto;
@@ -81,6 +75,7 @@ nav li {
 }
 
 
+/* Header */
 header div {
 	margin-top: 108px;
 	padding-top: 90px;
@@ -105,6 +100,7 @@ header h2 {
 	line-height: 114px;
 }
 
+/* Estilo básico para todos los div con hr+logo+hr */ 
 .logo-star {
 	display: block;
 	margin: 15px 0;
@@ -133,31 +129,35 @@ header p {
 	margin: 0;
 }
 
-#box-two {
+
+/* Segunda sección de la página, Portfolio */
+#portfolio {
 	text-align: center;
 	padding-top: 100px;
 	padding-bottom: 100px;
 }
-#box-two img {
+#portfolio img {
 	max-width: 350px;
 	margin: 0 15px 30px 15px;
 }
 
-#box-two h2 {
+#portfolio h2 {
 	font-size: 48px;
 	line-height: 58px;
 	color: #212529;
 }
 
-#box-two hr {
+#portfolio hr {
 	border: 2.5px solid #2C3E50;
 }
 
-#box-two .fa {
+#portfolio .fa {
 	color: #2C3E50;
 }
 
-#box-three {
+
+/*Tercera sección de la página, About */
+#about {
 	background-color: #18bc9c;
 	color: white;
 	text-align: center;
@@ -165,16 +165,16 @@ header p {
 	padding-bottom: 80px;
 }
 
-#box-three h2{
+#about h2{
 	font-size: 48px;
 	line-height: 58px;
 }
 
-#box-three hr {
+#about hr {
 	border: 2.7px solid;
 }
 
-#box-three p:not(.button) {
+#about p:not(.button) {
 	text-align: left;
 	display: inline-block;
 	font-family: "Lato", sans-serif;
@@ -185,7 +185,7 @@ header p {
 	vertical-align: top;
 }
 
-.button {
+#button {
 	display: inline-block;
 	margin-top: 35px;
 	border: 2px solid white;
@@ -195,52 +195,52 @@ header p {
 	font-size: 20px;
 }
 
-#box-three a {
+#about a {
 	text-decoration: none;
 	display: block;
 	color: white;
 	padding: 8px 16px;
 }
 
-#box-three a:hover {
+#about a:hover {
 	background-color: white;
 	color: #18bc9c;
 }
 
-#box-four {
+
+/* Cuarta sección de la página, Contact me */
+#contact-me {
 	padding-top: 100px;
 	padding-bottom: 110px;
 	text-align: center;
 }
 
-#box-four h2{
+#contact-me h2{
 	font-size: 48px;
 	line-height: 58px;
 	color:  #212529;
 }
 
-#box-four hr {
+#contact-me hr {
 	border: 2.7px solid #2C3E50;
 }
 
-#box-four .fa {
+#contact-me .fa {
 	color: #2C3E50;
 }
 
-
-
-#box-four div.barra {
+#contact-me div.barra {
 	padding-top: 25px;
 	padding-bottom: 25px;
 	border-bottom: 1px solid #eee;
 	display: inline-block;
 }
 
-#box-four ::placeholder {
+#contact-me ::placeholder {
 	color: #868E96;
 }
 
-input[type=text] {
+input[type=text], textarea {
 	width: 730px;
 	padding: 5px 0;
 	border: none;
@@ -249,7 +249,7 @@ input[type=text] {
 	line-height: 36px;
 }
 
- input[type=text]:focus {
+input[type=text]:focus, textarea:focus {
 	outline: none;
 }
 
@@ -264,7 +264,13 @@ input[type=text] {
 	color: #495057;
 }
 
-#box-four a {
+/* Botón de Send */
+#button-two {
+	text-align: left;
+}
+
+#contact-me a {
+	margin-left: 286px;
 	display: inline-block;
 	color: white;
 	text-decoration: none;
@@ -278,10 +284,12 @@ input[type=text] {
 	margin-top: 25px;
 }
 
-#box-four a:hover {
+#contact-me a:hover {
 	background-color: #128F76;
 }
 
+
+/* Última sección de la página; un footer */
 footer {
 	padding-top: 50px;
 	background-color: #2c3e50;
@@ -291,7 +299,7 @@ footer {
 	bottom: 0;
 }
 
- #cosa {
+ #footer-box {
 	display: table;
 	margin: 0 auto;
 	padding: 0;
@@ -359,7 +367,7 @@ footer li a:hover {
 	background-color: white;
 }
 
-.pie-pagina p {
+.copyright p {
 	clear: both;
 	font-size: 16px;
 	line-height: 24px;
